@@ -1,4 +1,4 @@
 belt
 ====
 
-A lightweight tool belt for basic tasks.
+A lightweight tool belt for basic daily tasks.
