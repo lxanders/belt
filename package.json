@@ -1,0 +1,23 @@
+{
+    "name": "belt",
+    "version": "0.0.1",
+    "description": "A lightweight tool belt for basic daily tasks.",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/lxanders/belt"
+    },
+    "dependencies": {
+    },
+    "devDependencies": {
+        "mocha": "1.17.1",
+        "chai": "1.8.1"
+    },
+    "engines": {
+        "node": "~0.8"
+    },
+    "engineStrict": true
+}
