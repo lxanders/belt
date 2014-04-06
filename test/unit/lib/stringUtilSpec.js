@@ -4,7 +4,7 @@
     var chai = require('chai'),
         expect = chai.expect;
 
-    describe('string', function () {
+    describe('stringUtil', function () {
 
 
 
