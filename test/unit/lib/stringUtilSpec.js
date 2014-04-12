@@ -41,13 +41,13 @@
 
             containedTestCases.forEach(function (testCase) {
                 it('shoud return true for "' + testCase.stringToCheck + '" contains "' + testCase.stringToSearchFor + '"', function () {
-                    expect(stringUtil.contains(testCase.stringToCheck, testCase.stringToSearchFor)).to.be.true;
+                    expect(stringUtil.contains(testCase.stringToCheck, testCase.stringToSearchFor)).to.be.equal(true);
                 });
             });
 
             notContainedTestCases.forEach(function (testCase) {
                 it('shoud return false for "' + testCase.stringToCheck + '" contains "' + testCase.stringToSearchFor + '"', function () {
-                    expect(stringUtil.contains(testCase.stringToCheck, testCase.stringToSearchFor)).to.not.be.true;
+                    expect(stringUtil.contains(testCase.stringToCheck, testCase.stringToSearchFor)).to.not.equal(true);
                 });
             });
 
