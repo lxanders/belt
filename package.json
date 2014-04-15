@@ -4,7 +4,7 @@
     "description": "A lightweight tool belt for basic daily tasks.",
     "main": "index.js",
     "scripts": {
-        "test": "node_modules/.bin/eslint ./ -c conf/eslint.json && ./node_modules/.bin/mocha test/unit/ --recursive"
+        "test": "eslint . && mocha test/unit/ --recursive"
     },
     "repository": {
         "type": "git",
