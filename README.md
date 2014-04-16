@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/lxanders/belt.svg?branch=master)](https://travis-ci.org/lxanders/belt)
+
 # belt
 
 A lightweight tool belt for basic daily tasks.
