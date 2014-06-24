@@ -75,13 +75,13 @@
                 ];
 
             containedTestCases.forEach(function (testCase) {
-                it('shoud return true for "' + testCase.stringToCheck + '" contains "' + testCase.stringToSearchFor + '" if ignoreCase = ' + testCase.ignoreCase, function () {
+                it('should return true for "' + testCase.stringToCheck + '" contains "' + testCase.stringToSearchFor + '" if ignoreCase = ' + testCase.ignoreCase, function () {
                     expect(stringUtil.contains(testCase.stringToCheck, testCase.stringToSearchFor, testCase.ignoreCase)).to.be.equal(true);
                 });
             });
 
             notContainedTestCases.forEach(function (testCase) {
-                it('shoud return false for "' + testCase.stringToCheck + '" contains "' + testCase.stringToSearchFor + '" if ignoreCase = ' + testCase.ignoreCase, function () {
+                it('should return false for "' + testCase.stringToCheck + '" contains "' + testCase.stringToSearchFor + '" if ignoreCase = ' + testCase.ignoreCase, function () {
                     expect(stringUtil.contains(testCase.stringToCheck, testCase.stringToSearchFor, testCase.ignoreCase)).to.not.equal(true);
                 });
             });
