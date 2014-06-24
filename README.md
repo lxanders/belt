@@ -12,4 +12,9 @@ Alternatively you can require specific modules - e.g. the `stringUtil` modul for
 
 ## API
 
-This will be documented once there are more functions and the format is clear.
+Currently the following modules are ready for use - a word of warning though: This will most likeley not be a stable API for the moment.
+
+*stringUtil
+**contains: Checks if a string is contained in another. An optional parameter for case insensitive checking is available.
+**startsWith: Checks if a string starts with another. An optional parameter for case insensitive checking is available.
+**endsWith: Checks if a string ends with another. An optional parameter for case insensitive checking is available.
