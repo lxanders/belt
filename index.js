@@ -3,6 +3,6 @@
 
     module.exports = {
         string: require('./lib/string')
-    }
+    };
 
 }());
