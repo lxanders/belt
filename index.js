@@ -1,6 +1,8 @@
 (function () {
     'use strict';
 
-    require('./lib/string');
+    module.exports = {
+        string: require('./lib/string')
+    };
 
 }());
