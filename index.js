@@ -2,7 +2,7 @@
     'use strict';
 
     module.exports = {
-        string: require('./lib/stringUtil')
+        string: require('./lib/string')
     }
 
 }());

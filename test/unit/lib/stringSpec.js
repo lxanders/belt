@@ -3,9 +3,9 @@
 
     var chai = require('chai'),
         expect = chai.expect,
-        stringUtil = require('../../../lib/stringUtil');
+        stringUtil = require('../../../lib/string');
 
-    describe('stringUtil', function () {
+    describe('string', function () {
 
         describe('contains', function () {
 
