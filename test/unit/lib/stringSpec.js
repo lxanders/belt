@@ -106,6 +106,36 @@
 
         });
 
+        describe('indexOfIgnoringCase', function () {
+
+            var testCases = [
+                { stringToSearchIn: 'ANY', stringToSearchFor: 'any', result: 0 },
+                { stringToSearchIn: 'any', stringToSearchFor: 'ANY', result: 0 },
+                { stringToSearchIn: 'ANY string', stringToSearchFor: 'any', result: 0 },
+                { stringToSearchIn: 'any string', stringToSearchFor: 'ANY', result: 0 },
+                { stringToSearchIn: 'ANYthing', stringToSearchFor: 'any', result: 0 },
+                { stringToSearchIn: 'anything', stringToSearchFor: 'ANY', result: 0 },
+                { stringToSearchIn: '  ANY', stringToSearchFor: 'any', result: 2 },
+                { stringToSearchIn: '  any', stringToSearchFor: 'ANY', result: 2 },
+                { stringToSearchIn: 'the same ANY', stringToSearchFor: 'any', result: 9 },
+                { stringToSearchIn: 'the same any', stringToSearchFor: 'ANY', result: 9 },
+                { stringToSearchIn: 'the same ANY', stringToSearchFor: ' any', result: 8 },
+                { stringToSearchIn: 'the same any', stringToSearchFor: ' ANY', result: 8 },
+                { stringToSearchIn: 'any interesting string', stringToSearchFor: 'not present', result: -1 },
+                { stringToSearchIn: 'ANY INTERESTING STRING', stringToSearchFor: 'not present', result: -1 },
+                { stringToSearchIn: 'any interesting string', stringToSearchFor: 'NOT PRESENT', result: -1 },
+                { stringToSearchIn: 'ANY INTERESTING STRING', stringToSearchFor: 'NOT PRESENT', result: -1 }
+
+            ];
+
+            testCases.forEach(function (testCase){
+                it('should work like indexOf but ignoring the case', function () {
+                    expect(stringUtil.indexOfIgnoringCase(testCase.stringToSearchIn, testCase.stringToSearchFor)).to.be.equal(testCase.result);
+                });
+            });
+
+        });
+
         describe('startsWith', function () {
 
             var startsWithTestCases = [
