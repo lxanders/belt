@@ -7,7 +7,7 @@ A lightweight tool belt for basic daily tasks.
 ## Getting started
 
 - Just install the tool directly [via npm](https://www.npmjs.org/package/beltjs): `npm install beltjs`
-- Require it as normal: `var belt = require('belt');`
+- Require it as normal: `var belt = require('beltjs');`
 - Alternatively you can require specific modules - e.g. the `stringUtil` modul for useful functions regarding strings. The modules are located in the `lib` folder.
 
 ## API
