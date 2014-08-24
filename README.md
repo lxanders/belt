@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/lxanders/belt.svg?branch=master)](https://travis-ci.org/lxanders/belt)
+[![NPM version](https://badge.fury.io/js/beltjs.svg)](http://badge.fury.io/js/beltjs)
 
 # beltjs
 
