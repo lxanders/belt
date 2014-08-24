@@ -19,6 +19,7 @@ Currently the following modules are ready for use. The API is stable for now. Br
   - `contains`: Checks if a string is contained in another. An optional parameter for case insensitive checking is available.
   - `startsWith`: Checks if a string starts with another. An optional parameter for case insensitive checking is available.
   - `endsWith`: Checks if a string ends with another. An optional parameter for case insensitive checking is available.
+
 - module: `number`
   - `isNumeric`: Checks if the provided object is numeric.
   - `isInt`: Checks if the provided object is an integer. Attention: This method considers e.g. `1.0` as an integer.
