@@ -1,6 +1,6 @@
 {
     "name": "beltjs",
-    "version": "0.0.6",
+    "version": "0.1.0",
     "description": "A lightweight tool belt for basic daily tasks.",
     "main": "index.js",
     "scripts": {
