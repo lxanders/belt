@@ -1,0 +1,4 @@
+.eslintignore
+.eslintrc
+.travis.yml
+test
