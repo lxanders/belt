@@ -233,4 +233,27 @@ describe('string', function () {
 
     });
 
+    describe('stripWhitespaces', function () {
+
+            var testCases = [
+                { inputString: 'a', resultString: 'a' },
+                { inputString: 'any', resultString: 'any' },
+                { inputString: 'any ', resultString: 'any' },
+                { inputString: ' any', resultString: 'any' },
+                { inputString: ' any ', resultString: 'any' },
+                { inputString: ' any string ', resultString: 'anystring' },
+                { inputString: ' any   string ', resultString: 'anystring' },
+                { inputString: 'anything   ', resultString: 'anything' },
+                { inputString: '   anything', resultString: 'anything' },
+                { inputString: '   anything   ', resultString: 'anything' }
+            ];
+
+            testCases.forEach(function (testCase) {
+                it('should result to ' + testCase.resultString + ' for ' + testCase.inputString, function () {
+                    expect(stringUtil.stripWhitespaces(testCase.inputString)).to.equal(testCase.resultString);
+                });
+            });
+
+    });
+
 });
