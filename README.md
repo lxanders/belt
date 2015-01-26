@@ -8,8 +8,8 @@ A lightweight tool belt for basic daily tasks.
 ## Getting started
 
 - Just install the tool directly [via npm](https://www.npmjs.org/package/beltjs): `npm install beltjs`
-- Require it as normal: `var belt = require('beltjs');`
-- Alternatively you can require specific modules - e.g. the `string` modul for useful functions regarding strings. The modules are located in the `lib` folder. So requiring the `number` module would just be something like `var numberUtil = require('./lib/number');` and the usage is as easy as `numberUtil.isInt(1);`.
+- Require it as normal: `var belt = require('beltjs');`. Usage-example: `belt.number.isInt(42);`
+- Alternatively you can require specific modules - e.g. the `string` modul for useful functions regarding strings: `var stringUtils = require('beltjs').string;`. Usage-example: `stringUtils.contains(string1, string2);`
 
 ## API
 
