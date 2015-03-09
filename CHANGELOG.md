@@ -1,3 +1,10 @@
+## 0.2.1 (March 9, 2015)
+
+### Dependency Upgrades
+
+* Update pr-log (#25)
+
+
 ## 0.2.0 (January 26, 2015)
 
 ### Features
